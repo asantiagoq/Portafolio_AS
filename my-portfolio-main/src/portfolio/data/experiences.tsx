@@ -22,7 +22,7 @@ export const experiences: Experience[] = [
         subtitle: 'Gestion de Requerimientos para el director de la Escuela',
         content: 'Se realizó una gestion de requerimientos para una futura aplicacion de escritorio usando la metodología Agil SCRUM',
         date: '2023',
-        link: '',
+        link: 'https://drive.google.com/drive/folders/1A88A2bKQbp43X7vkHlGF0ihp2aYRQQt7?usp=sharing',
         icon: technologies['github'].logo,
     },
     {
