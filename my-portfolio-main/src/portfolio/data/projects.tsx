@@ -2,7 +2,7 @@ import { Project } from '../interfaces/interfaces';
 
 export const projects: Project[] = [
     {
-        title: 'Sistema de Gestion de Invetarios',
+        title: 'Sistema de Gestion de Inventarios',
         img: './project1.webp',
         about: 'Ecommerce para manejar el inventario de productos de una Librería así como las notas de entrada y notas de salida  ',
         tools: ['angular', 'materialUI', 'typescript', 'HTML','CSS', 'AWS'],
