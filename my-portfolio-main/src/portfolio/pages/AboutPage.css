@@ -1,0 +1,13 @@
+
+.vertical-timeline {
+    font-family: 'Outfit', sans-serif
+}
+
+.certificate__container {
+    display: flex;
+    justify-content: end;
+}
+.certificate {
+    display: inline-flex;
+    margin: 13px 10px 0 0;
+}

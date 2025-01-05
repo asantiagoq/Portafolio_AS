@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Archivo+Black&display=swap');
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    background-color: var(--background-secondary-color);
+    gap: 25px;
+    font-family: "Alata", sans-serif;
+    font-style: normal;
+    position: sticky;
+    top: 0;
+}
+
+.navbar--left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding-left: 75px;
+    user-select: none;
+}
+.navbar--left__home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.title {
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+
+.navbar--right {
+    padding-right: 75px;
+    position: relative;
+}
+
+.button__toggle {
+    display: none;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    opacity: 1;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.menu__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+.menu__item__link {
+    text-decoration: none;
+    color: var(--text-color);
+    cursor: pointer;
+    user-select: none;
+    font-size: 1.7rem;
+    font-weight: 500;
+    font-style: normal;
+    white-space: nowrap;
+    padding: 10px 20px;
+}
+
+.link__selected {
+    position: absolute;
+    background: var(--text-color);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 4px;
+}
+
+.text__selected {
+    color: white;
+}
+
+@media (max-width: 980px) {
+    .navbar--right{
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        z-index: 1;
+        padding: 0;
+        width: 100%;
+        background-color: var(--background-secondary-color);
+        /* height: 100%; */
+    }
+    .menu {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .button__toggle {
+        display: block;
+        padding-right: 75px;
+    }
+    .navbar {
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        /* position: sticky; */
+        /* top: 0; */
+        /* padding: 0 50px; */
+    }
+
+    .navbar--left {
+        padding-left: 0;
+        margin: 0 auto;
+    }
+    .button__toggle {
+        padding-right: 0;
+        margin: 0 auto;
+    }
+}
