@@ -8,7 +8,7 @@ export const contacts: Contact[] = [
     },
     {
         name: 'whatsapp',
-        path: 'https://w.app/OEI2pv',
+        path: 'https://api.whatsapp.com/send/?phone=980705957&text&type=phone_number&app_absent=0',
         color: '#1fdb3e',
     },
     {
